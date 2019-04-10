@@ -14,6 +14,7 @@
 		$mail =$_POST['email'];
 		$user =$_POST['username'];
 		$pass =$_POST['password'];
+		$rol =$_POST['rol'];
 
 		$host_db ="localhost";
 		$user_db ="root";
@@ -38,13 +39,13 @@
 		echo "<a href='register.html'> por favor escoja un nombre de usuario diferente </a>";
 	}else
 	{
-		$query = "INSERT INTO usuarios VALUES ('','$name', '$mail', '$user','$pass')";
+		$query = "INSERT INTO usuarios VALUES ('','$name', '$mail', '$user','$pass','$rol')";
 		if ($conexion -> query($query) == true) {
 			echo "<br>"."<h1>"."usuario creado correctamente"."</h1>";
 			echo "<br>";
 			echo "<h3>"."Bienvenido: ".$_POST['username']."</h3>";
 			echo "<br>";
-			echo "<h3>"."iniciar sesion"."<a href='index.html'> iniciar sesion </a>"."</h3>";
+			echo "<h3>"."iniciar sesion"."<a href='index.php'> iniciar sesion </a>"."</h3>";
 		}else
 		{
 			echo "error al crear el usuario".$query."<br>".$conexion -> error;

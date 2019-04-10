@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 	  <!-- Brand -->
-	  <a class="navbar-brand" href="#">Logo</a>
+	  <a class="" ><img style="width: 150px; height: 150px" src="images/Imagen1.png"></a>
 
 	  <!-- Links -->
 	  <ul class="navbar-nav">
@@ -33,7 +33,7 @@
 				<a class="dropdown-item" href="consultar.php" role="button">Consultar</a><br>
 				<a class="dropdown-item" href="registrar.php" role="button">Registrar</a><br>
 				<a class="dropdown-item" href="actualizar.php" role="button">Actualizar </a><br>
-				<a class="dropdown-item" href="eliminar.php" role="button">eliminar</a>
+				<a class="dropdown-item" href="eliminar.php" role="button">Eliminar</a>
 
 	      </div>
 	    </li>
@@ -46,7 +46,7 @@
 
 <div class="container mregister">
 		<div id="login">
-			<h3>Registrarse</h3><br/>
+			<h3>Actualizar</h3><br/>
 			<form name="registerform" id="registerform" action="actualizar.php" method="post">
 			<input class=""type="text" name="Documento"  placeholder="Documento de Identidad"></input><br /><br />
 			<input class=""type="text" name="Nombres"  placeholder="Nombre Completo"></input><br /><br />

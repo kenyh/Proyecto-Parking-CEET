@@ -30,7 +30,8 @@
 
 
 <nav class="navbar navbar-expand bg-k navbar-dark">
-  <a class="navbar-brand" href="#">Navbar w/ text</a>
+  <a class="navbar-brand"href="#"></a>
+  <a class="" ><img style="width: 150px; height: 150px" src="images/Imagen1.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -38,7 +39,7 @@
 
      <ul class="navbar-nav nav-k">
 	    <li class="nav-item">
-	      <a class="nav-link" href="#">Link 1</a>
+	      <a class="nav-link" href="register.php">Registro usuario</a>
 	    </li>
 	    <li class="nav-item">
 	      <a class="nav-link" href="#">Link 2</a>
@@ -78,7 +79,7 @@
 		// Te recomiendo utilizar esta conección, la que utilizas ya no es la recomendada.
 		$link = new PDO('mysql:host=localhost;dbname=parking ceet', 'root', ''); // el campo vaciío es para la password.
 
-		?>
+	?>
 
 		<div class="table-striped">
 		<table class="table table-hover table-dark">
