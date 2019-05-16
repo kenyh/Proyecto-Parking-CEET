@@ -46,9 +46,6 @@
             <div class="row d-flex align-items-center mb-4">
 
               <!--Grid column-->
-              <div class="text-center mb-3 col-md-12">
-                <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Sign up</button>
-              </div>
               <input type="hidden" name="envio">
               <h5 class="regtext">¿Olvidaste tu contraseña?<a class="" href="register.html">Ingresa aqui</a></h5>
               <input type="submit" name="login" class="button" value="Ingresar" />
@@ -59,12 +56,6 @@
 
             <!--Grid row-->
             <div class="row">
-
-              <!--Grid column-->
-              <div class="col-md-12">
-                <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#" class="green-text ml-1 font-weight-bold">
-                    Log in</a></p>
-              </div>
               <!--Grid column-->
 
             </div>
@@ -80,7 +71,7 @@
   </form>
 
   <div class="btn-center">
-    <a href="" class="btn btn-default btn-rounded font-index" id="BienPar"  data-toggle="modal" data-target="#darkModalForm">Bienvenido a Par-King Revolution</a>
+    <a href="" class="btn btn-default btn-rounded font-index" data-toggle="modal" data-target="#darkModalForm">Bienvenido a Par-King Revolution</a>
   </div>
   	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
