@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html  lang="es">
 	<head>
 		<title>Inicio Validacion De usuarios</title>
@@ -23,7 +23,7 @@
 			}
 			else
 			{
-				header("location:menu.php");
+				header("location:menu-ejemplo.php");
 			}
 		?>
 
