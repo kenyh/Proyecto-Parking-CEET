@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Par-King Revolution</title>
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -16,7 +17,7 @@
     aria-hidden="true">
     <div class="modal-dialog form-dark" role="document">
       <!--Content-->
-      <div class="modal-content card card-image" style="background-image: url('images/login-1.jpg'); background-size: cover; background-repeat: no-repeat;"  >
+      <div class="modal-content card card-image" style="background-image: url('images/index-5.png'); background-size: cover; background-repeat: no-repeat;"  >
         <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
           <!--Header-->
 
