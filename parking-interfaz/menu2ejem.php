@@ -17,7 +17,6 @@
 </head>
 
 <body>	
-
 <?php
 		session_start();
 
@@ -26,9 +25,6 @@
 				header("location:index.php");
 			}
 	?>
-
-
-
 
 
 	
@@ -58,7 +54,7 @@
 <header class="bp-header cf">
 <span class="bp-header__present">Par-King Revolution <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
 <h1 class="bp-header__title">Actualización</h1>
-<p class="bp-header__desc">En este segmento puedes actualizar los datos <a href="">clickeame perra
+<p class="bp-header__desc">En este segmento puedes actualizar los datos <a href="">clickeame x
 </a></p>
 
 <!--<nav class="bp-nav">
@@ -84,16 +80,17 @@
 <select name="Seleccionar" size="1">
 
 
-<option>Ticket</option>
+	<option>Ticket</option>
 
-<option>Cedula</option>
+	<option>Cedula</option>
 
-<option>Placa</option>
+	<option>Placa</option>
 
-<option selected>Fecha</option>
+	<option selected>Fecha</option>
 
 </select>	
 </p>
+<input type="text">digite aqui el identificador
 
 
 </header>
@@ -102,14 +99,15 @@
 
 <div class="page" id="page-manuals">
 <header class="bp-header cf">
-<h1 class="bp-header__title">Manuals</h1>
-<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+<h1 class="bp-header__title">Busqueda Cliente</h1>
+<p class="bp-header__desc">Aqui se puede realizar la busqueda de cliente  <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
 <p class="info">
-"When you adopt a vegan diet we make a connection, you don't go back, it is not a diet, it is a lifestyle." &mdash; Freelee Frugivore
+El usuario podrá realizar la busqueda del cliente o de los registros del cliente dentro del parqueadero.
 </p>
 </header>
-<img class="poster" src="images/2.jpg" alt="img02" />
+<img class="poster" src="images/" alt="img02" />
 </div>
+
 <div class="page" id="page-software">
 <header class="bp-header cf">
 <h1 class="bp-header__title">Software &amp; Downloads</h1>
@@ -156,7 +154,7 @@
 <p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
 <p class="info">
 "The question is not, 'Can they reason?' nor, 'Can they talk?' but rather, 'Can they suffer?" &mdash; Jeremy Bentham
-</p>
+</p> 
 </header>
 <img class="poster" src="images/1.jpg" alt="img01" />
 </div>
