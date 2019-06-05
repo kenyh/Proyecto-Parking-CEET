@@ -5,7 +5,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Parking-CEET</title>
+		<title>Par-King Revolution</title>
 
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" type="text/css" href="styles.css">
@@ -30,35 +30,31 @@
 
 
 <nav class="navbar navbar-expand bg-k navbar-dark">
-  <a class="navbar-brand"href="#"></a>
+  <!--<a class="navbar-brand"href="#"></a>-->
   <a class="" ><img style="width: 150px; height: 150px" src="images/Imagen1.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
 
-     <ul class="navbar-nav nav-k">
-	    <li class="nav-item">
-	      <a class="nav-link" href="register.php">Registro usuario</a>
-	    </li>
-	    <li class="nav-item">
-	      <a class="nav-link" href="#">Link 2</a>
-	    </li>
+     
 
-	    <!-- Dropdown -->
-	    <li class="nav-item dropdown">
-	      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-	        Clientes
-	      </a>
-	      <div class="dropdown-menu">
-				<a class="dropdown-item" href="consultar.php" role="button">Consultar</a><br>
-				<a class="dropdown-item" href="registrar.php" role="button">Registrar</a><br>
-				<a class="dropdown-item" href="actualizar.php" role="button">Actualizar </a><br>
-				<a class="dropdown-item" href="eliminar.php" role="button">eliminar</a>
 
-	      </div>
-	    </li>
-	  </ul>
+<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Clientes</a>
+  <div class="dropdown-menu">
+		<a class="dropdown-item" href="consultar.php" role="button">Consultar</a><br>
+		<a class="dropdown-item" href="registrar.php" role="button">Registrar 2</a><br>
+		<a class="dropdown-item" href="actualizar.php" role="button">Actualizar </a><br>
+		<a class="dropdown-item" href="eliminar.php" role="button">eliminar</a>
+  </div>
+</div>
+
+
     <span class="navbar-text">
 		<?php
 			echo "<br><br>Usuario: ".$_SESSION["usuario"]." ";
