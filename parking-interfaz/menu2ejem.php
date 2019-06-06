@@ -18,6 +18,8 @@
 
 <body>	
 
+
+
 <?php
 		session_start();
 
@@ -26,9 +28,6 @@
 				header("location:index.php");
 			}
 	?>
-
-
-
 
 
 	
@@ -81,7 +80,7 @@
 </p>
 <p 
 <label for="user.pass"> Seleccionar<br>
-<select name="Seleccionar" size="1">
+<select name="eleccionar" size="1">
 
 
 <option>Ticket</option>
@@ -97,7 +96,7 @@
 
 
 </header>
-<img class="poster" src="images/6.jpg" alt="img06" />
+<img class="poster" src="images/6.jpg" alt="img06" style="width:100%" />
 </div>
 
 <div class="page" id="page-manuals">
