@@ -17,21 +17,6 @@
 </head>
 
 <body>	
-
-<?php
-		session_start();
-
-			if(!isset($_SESSION["usuario"]))
-			{
-				header("location:index.php");
-			}
-	?>
-
-
-
-
-
-	
 <!-- navigation -->
 <nav class="pages-nav">
 <div class="pages-nav__item"><a class="link link--page" href="#page-home">Actualización</a></div>
@@ -82,7 +67,7 @@
 <p 
 <label for="user.pass"> Seleccionar<br>
 <select name="Seleccionar" size="1">
-
+	
 
 <option>Ticket</option>
 

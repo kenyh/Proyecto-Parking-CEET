@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu navegación</title>
-  <meta name="description" content="Blueprint: A basic template for a page stack navigation effect" />
-  <meta name="keywords" content="blueprint, template, html, css, page stack, 3d, perspective, navigation, menu" />
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/demo.css" />
-  <link rel="stylesheet" type="text/css" href="css/component.css" />
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="js/modernizr-custom.js"></script>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blueprint: Page Stack Navigation</title>
+<meta name="description" content="Blueprint: A basic template for a page stack navigation effect" />
+<meta name="keywords" content="blueprint, template, html, css, page stack, 3d, perspective, navigation, menu" />
+<meta name="author" content="Codrops" />
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr-custom.js"></script>
 </head>
 
 <body>
+<!-- navigation -->
+<nav class="pages-nav">
+<div class="pages-nav__item"><a class="link link--page" href="#page-home">Actualización</a></div>
+<div class="pages-nav__item"><a class="link link--page" href="#page-docu">Busqueda avanzada</a></div>
+<div class="pages-nav__item"><a class="link link--page" href="#page-manuals">Busqueda de cliente</a></div>
 
-<!--login-->
-
-
-  <!-- navigation -->
-  <nav class="pages-nav">
-    <div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#page-docu">Documentation</a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#page-manuals">Manuals</a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#page-software">Software</a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#page-custom">Customization &amp; Settings</a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#page-training">Training</a></div>
-    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-buy">Where to buy</a></div>
-    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">Blog &amp; News</a></div>
-    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a></div>
-
-
+<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-buy">Contactenos</a></div>
+<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">información</a></div>
 
   <span class="navbar-text">
     <?php

@@ -8,6 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="js/validate.js"></script>
 
 </head>
 <body>
@@ -26,12 +27,7 @@
 
 	  <!-- Links -->
 	  <ul class="navbar-nav">
-	    <li class="nav-item">
-	      <a class="nav-link" href="#">Link 1</a>
-	    </li>
-	    <li class="nav-item">
-	      <a class="nav-link" href="#">Link 2</a>
-	    </li>
+
 
 	    <!-- Dropdown -->
 	    <li class="nav-item dropdown">
@@ -45,9 +41,6 @@
 				<a class="dropdown-item" href="eliminar.php" role="button">Eliminar</a>
 
 	      </div>
-	    </li>
-	     <li class="nav-item">
-			<a class="button" href="cerrar_sesion.php"><img src="https://img.icons8.com/metro/26/000000/exit.png"></a>
 	    </li>
 	  </ul>
 </nav>
@@ -78,10 +71,14 @@
 	        </div>
 
 			<center>
-				<input type="submit" value="Regitrarse" class="button" name="btn-registrar"></input>
-					<a href="menu.php" class="btn btn-info">Volver a menu</a>
+				<input type="submit" value="Regitrarse" class="button" id='validate' name="btn-registrar"></input>
+					<a href="menu-ejemplo.php" class="btn btn-info">Volver a menu</a>
 			</center>
-
+			<form>
+			<input id='email'>
+			<button type='submit' id='validate'>Validar correo</button>
+			</form>
+			<h2 id='result'></h2>
 			</form>
 		</div>
 	</div>
@@ -208,5 +205,6 @@
 				}
 
 ?>
+<script src="js/validate.js"></script>
 </body>
 </html>

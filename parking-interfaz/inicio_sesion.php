@@ -32,7 +32,7 @@
 		}
 		else
 		{
-			header("location:menu.php");
+			header("location:menu-ejemplo.php");
 		}
 	}
 	catch(Exception $e)

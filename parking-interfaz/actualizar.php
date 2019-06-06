@@ -17,12 +17,6 @@
 
 	  <!-- Links -->
 	  <ul class="navbar-nav">
-	    <li class="nav-item">
-	      <a class="nav-link" href="#">Link 1</a>
-	    </li>
-	    <li class="nav-item">
-	      <a class="nav-link" href="#">Link 2</a>
-	    </li>
 
 	    <!-- Dropdown -->
 	    <li class="nav-item dropdown">
@@ -37,9 +31,7 @@
 
 	      </div>
 	    </li>
-	     <li class="nav-item">
-			<a class="button" href="cerrar_sesion.php"><img src="https://img.icons8.com/metro/26/000000/exit.png"></a>
-	    </li>
+
 	  </ul>
 </nav>
 
@@ -56,7 +48,7 @@
 			<input class=""type="text" name="Vehiculo"  placeholder="Tipo de vehiculo"></input><br /><br />
 			<center>
 				<input type="submit" value="actualizar" class="button" name="btn-actualizar"></input>
-					<a href="menu.php" class="btn btn-info">Volver a menu</a>
+					<a href="menu-ejemplo.phpp" class="btn btn-info">Volver a menu</a>
 			</center>
 
 			</form>
