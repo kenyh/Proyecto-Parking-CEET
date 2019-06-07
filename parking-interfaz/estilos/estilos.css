@@ -1,0 +1,23 @@
+.uno {
+    text-align: center;
+    width: 500px;
+    height: auto; overflow: hidden;
+    border: 1px solid;
+    float: left;
+    padding: 5px;
+    background: #626e56;
+}
+.datos {
+    width: 12rem;
+    height: 02rem;
+    border-radius: 45%;
+    text-align: center;
+    background-attachment: #4383AF;
+}
+.datos:hover {
+    background: #A7BECF;
+}
+.logopar{
+    text-align: center;
+    float: center;
+}
