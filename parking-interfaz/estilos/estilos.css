@@ -12,10 +12,16 @@
     height: 02rem;
     border-radius: 45%;
     text-align: center;
-    background-attachment: #4383AF;
+    background: #CEDCE7;
+    border: solid 2px #2A2F77;
 }
 .datos:hover {
     background: #A7BECF;
+}
+.select {
+    height: 03rem;
+    text-align: center;
+    border-radius: 10%;
 }
 .logopar{
     text-align: center;

@@ -69,6 +69,7 @@
 
 <div class="page" id="page-docu">
 <header class="bp-header cf">
+<span class="bp-header__present">Par-King Revolution <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
 <h1 class="bp-header__title">Busqueda avanzada</h1>
 <Section class="uno">
 <p class="bp-header__desc"> Sobre esta pagina se puede realizar una busqueda profunda de todos los roles que se encuentran dentro de la plataforma, es decir, Se puede realizar una busqueda profunda de los datos que se necesiten.  <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Clik aqui</a></p>
@@ -78,8 +79,8 @@
 <br>
 <br>
 <p>	 
-<label for="user.pass"> Seleccionar<br>
-	<select name="Seleccionar" size="1" width: 80%>
+<label for="user.pass"> Seleccionar :<br>
+	<select class="select" name="Seleccionar" size="1" width: 80%>
 		<option selected>seleccione un tipo de busqueda</option>
 		<option value="ticket">Ticket</option>
 		<option value="Cedula">Cedula</option>
@@ -101,54 +102,22 @@
 
 
 <div class="page" id="page-manuals">
-<header class="bp-header cf">
-<h1 class="bp-header__title">Busqueda de cliente</h1>
-<p class="bp-header__desc">Aqui se pueden realizar busquedas respecto al cliente, se pueden obtener datos como: vehiculo ingresado, horarios dentro del establecimiento, etc. <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-<p class="info">
-"When you adopt a vegan diet we make a connection, you don't go back, it is not a diet, it is a lifestyle." &mdash; Freelee Frugivore
-</p>
-</header>
-<img class="poster" src="images/buscl.png" alt="img02" />
-</div>
-
-<div class="page" id="page-software">
-<header class="bp-header cf">
-<h1 class="bp-header__title">Software &amp; Downloads</h1>
-<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-<p class="info">
-"I decided to pick the diet that I thought would maximize my chances of long-term survival." &mdash; Al Gore
-</p>
-</header>
-<img class="poster" src="images/3.jpg" alt="img03" />
-</div>
-
-<div class="page" id="page-custom">
-<header class="bp-header cf">
-<h1 class="bp-header__title">Customization &amp; Settings</h1>
-<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-<p class="info">
-"You have to make a conscious decision to change for your own well-being, that of your family and your country." &mdash;Bill Clinton
-</p>
-</header>
-<img class="poster" src="images/4.jpg" alt="img04" />
-</div>
-
-<div class="page" id="page-training">
-<header class="bp-header cf">
-<h1 class="bp-header__title">Training &amp; Learning Center</h1>
-<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-<p class="info">
-"The moment I began to understand what was going on with the treatment of animals, it led me more and more in the way of the path I am [on] now, which is a complete vegan." &mdash; Bryan Adams
-</p>
-</header>
-<img class="poster" src="images/5.jpg" alt="img05" />
+	<header class="bp-header cf">
+	<span class="bp-header__present">Par-King Revolution <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+	<h1 class="bp-header__title">Busqueda de cliente</h1>
+	<p class="bp-header__desc">Aqui se pueden realizar busquedas respecto al cliente, se pueden obtener datos como: vehiculo ingresado, horarios dentro del establecimiento, etc. <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+	<p class="info">
+	"When you adopt a vegan diet we make a connection, you don't go back, it is not a diet, it is a lifestyle." &mdash; Freelee Frugivore
+	</p>
+	</header>
+	<img class="poster" src="images/buscl.png" alt="img02" />
 </div>
 
 
 <div class="page" id="page-buy">
 <header class="bp-header cf">
-<h1 class="bp-header__title">Where to buy</h1>
-<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+<span class="bp-header__present">Par-King Revolution <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+<h1 class="bp-header__title">CONTACTENOS</h1>
 <p class="info">
 "When people ask me why I don't eat meat or xany other animal products, I say, 'Because they are unhealthy and they are the product of a violent and inhumane industry.'" &mdash;
 </p>
@@ -159,8 +128,8 @@
 
 <div class="page" id="page-blog">
 <header class="bp-header cf">
-<h1 class="bp-header__title">Blog &amp; News</h1>
-<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+<span class="bp-header__present">Par-King Revolution <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+<h1 class="bp-header__title">INFORMACIÓN</h1>
 <p class="info">
 "The question is not, 'Can they reason?' nor, 'Can they talk?' but rather, 'Can they suffer?" &mdash; Jeremy Bentham
 </p>
@@ -168,16 +137,6 @@
 <img class="poster" src="images/1.jpg" alt="img01" />
 </div>
 
-<div class="page" id="page-contact">
-<header class="bp-header cf">
-<h1 class="bp-header__title">Contact</h1>
-<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-<p class="info">
-"Man is the only animal that can remain on friendly terms with the victims he intends to eat until he eats them." &mdash; Samuel Butler
-</p>
-</header>
-<img class="poster" src="images/4.jpg" alt="img04" />
-</div>
 </div>
 <!-- /pages-stack -->
 <button class="menu-button"><span>Menu</span></button>
