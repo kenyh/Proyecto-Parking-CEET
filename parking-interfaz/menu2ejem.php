@@ -17,12 +17,19 @@
 <script src="js/modernizr-custom.js"></script>
 </head>
 
-<body>	
+<body>
+
+<?php
+    session_start();
+
+      if(!isset($_SESSION["usuario"]))
+      {
+        header("location:index.php");
+      }
+  ?>
 
 
 
-
-	
 <!-- navigation -->
 <nav class="pages-nav">
 <div class="pages-nav__item"><a class="link link--page" href="#page-home">Actualización</a></div>
@@ -31,9 +38,17 @@
 
 <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-buy">Contactenos</a></div>
 <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">información</a></div>
+
+ <span class="navbar-text">
+    <?php
+      echo "<br><br>Usuario: ".$_SESSION["usuario"]." ";
+    ?>
+    <br>
+    <a class="" href="cerrar_sesion.php"><img src="https://img.icons8.com/metro/26/000000/exit.png"></a>
+    </span>
 <img class="logopar" src="images/logopar2.png " alt="img01" width="20%"/>
 
-<div class="pages-nav__item pages-nav__item--social">	
+<div class="pages-nav__item pages-nav__item--social">
 <!--<a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
 <a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
 <a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
@@ -78,7 +93,7 @@
 <br>
 <br>
 <br>
-<p>	 
+<p>
 <label for="user.pass"> Seleccionar :<br>
 	<select class="select" name="Seleccionar" size="1" width: 80%>
 		<option selected>seleccione un tipo de busqueda</option>
@@ -88,7 +103,7 @@
 		<option value="Fecha">Fecha</option>
 	</select>
 <br>
-<br>	
+<br>
 	<input id="id_input" type="text">
 	<input type="submit">
 </p>
@@ -109,6 +124,107 @@
 	<p class="info">
 	"When you adopt a vegan diet we make a connection, you don't go back, it is not a diet, it is a lifestyle." &mdash; Freelee Frugivore
 	</p>
+
+<!-- consulta-->
+
+	<div class="container mregister">
+		<div id="login">
+			<h3>Consultar</h3><br/>
+			<form name="registerform" id="registerform" action="menu2ejem.php" method="post">
+			<input class=""type="text" name="Documento"  placeholder="Documento de Identidad"></input><br /><br />
+
+
+			<center>
+				<input type="submit" value="Consultar" class="button" name="btn-consultar"></input>
+					<a href="menu-ejemplo.php" class="btn btn-info">Volver a menu</a>
+			</center>
+
+			</form>
+		</div>
+	</div>
+
+	<?php
+	include("conexion.php");
+	$Documento = "";
+	$Nombres = "";
+	$Correo = "";
+	$Direccion ="";
+
+	if (isset($_POST['btn-consultar']))
+	{
+
+		$Documento = $_POST['Documento'];
+		$_SESSION['sesion_exito']=0;
+
+		if ($Documento =="")
+		{
+			$_SESSION['sesion_exito']=2;//Error de campos vacio
+			echo "
+			<p style=\"color:red\" align=\"center\"><strong>
+				campos vacios, es necesario que ingrese un numero de documento
+			</strong></p>
+			";
+		}
+		else
+		{
+			//CONSULTAR
+			$resultados = mysqli_query($conexion,"SELECT * FROM $table_name WHERE Documento = '$Documento'");
+			while($consulta = mysqli_fetch_array($resultados))
+			{
+					$_SESSION['sesion_exito']=1;//ingreso a base de datos izo la cosulta
+					echo"
+						<table class=\"table table-hover table-dark\" >
+							<tr>
+								<td>
+									<lavel for=\"documento\"><b>Documento:</b></lavel>
+								</td>
+								<td>
+									".$consulta['Documento']."</td>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<lavel for=\"nombre\"><b>Nombres:</b></lavel>
+								</td>
+								<td>
+									".$consulta['Nombres']."
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<lavel for=\"apellido\"><b>Correo:</b></lavel>
+								</td>
+								<td>
+									".$consulta['Correo']."
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<lavel for=\"telefono\"><b>Direccion:</b></lavel>
+								</td>
+								<td>
+									".$consulta['Direccion']."</td>
+								</td>
+							</tr>
+						</table>
+						";
+				}
+			}
+
+			if($_SESSION['sesion_exito']<>1 AND $_SESSION['sesion_exito']<>2)
+					{
+						echo"
+							<p style=\"color:red\" align=\"center\" ><strong>
+								Los datos son incorrectos, o no existen en la base de datos. Vuelva a intentarlo nuevamente.
+							</strong></p>
+							";
+					}
+				}
+
+
+?>
+
+
 	</header>
 	<img class="poster" src="images/buscl.png" alt="img02" />
 </div>
