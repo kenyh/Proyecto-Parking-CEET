@@ -19,15 +19,17 @@
 
 <body>
 
-<?php
-    session_start();
 
-      if(!isset($_SESSION["usuario"]))
-      {
-        header("location:index.php");
-      }
-  ?>
+	<?php
+	/*
+	    session_start();
 
+	      if(!isset($_SESSION["usuario"]))
+	      {
+	        header("location:index.php");
+	      }
+	      */
+	?>
 
 
 <!-- navigation -->
@@ -45,7 +47,8 @@
     ?>
     <br>
     <a class="" href="cerrar_sesion.php"><img src="https://img.icons8.com/metro/26/000000/exit.png"></a>
-    </span>
+</span>
+
 <img class="logopar" src="images/logopar2.png " alt="img01" width="20%"/>
 
 <div class="pages-nav__item pages-nav__item--social">
@@ -130,7 +133,7 @@
 	<div class="container mregister">
 		<div id="login">
 			<h3>Consultar</h3><br/>
-			<form name="registerform" id="registerform" action="menu2ejem.php" method="post">
+			<form name="registerform" id="registerform" action="consultar.php" method="post">
 			<input class=""type="text" name="Documento"  placeholder="Documento de Identidad"></input><br /><br />
 
 

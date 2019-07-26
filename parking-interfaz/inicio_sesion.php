@@ -24,16 +24,16 @@
 		$numero_registro=$resultado->rowCount();
 
 		if($numero_registro!=0)
-		{
-			session_start();
-			$_SESSION["usuario"]=$_POST["usuario"];
-			header("location:inicioValid.php");
+			{
+				session_start();
+				$_SESSION["usuario"]=$_POST["usuario"];
+				header("location:inicioValid.php");
 
-		}
-		else
-		{
-			header("location:menu-ejemplo.php");
-		}
+			}
+			else
+			{
+				header("location:menu2ejem.php");
+			}
 	}
 	catch(Exception $e)
 	{

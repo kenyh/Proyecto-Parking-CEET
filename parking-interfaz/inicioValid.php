@@ -23,7 +23,7 @@
 			}
 			else
 			{
-				header("location:menu-ejemplo.php");
+				header("location:menu2ejem.php");
 			}
 		?>
 
