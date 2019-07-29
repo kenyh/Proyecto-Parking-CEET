@@ -8,104 +8,108 @@
 <title>PAR-KING REVOLUTION</title>
 
 <link rel="shortcut icon" href="favicon.ico">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="estilos.css"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/apple.js"></script>
 </head>
 <body>
-  <header>
-  <nav>
-    <div class="menu-container">
-      <!-- Menu -->
-      <ul class="menu">
-        
-        <!--
-          header menu
+<header>
+<nav>
+  <div class="menu-container">
+    <!-- Menu -->
+    <ul class="menu">
+      <li class="menu-apple">
+        <a class=""><img style="width: 50px; height: 60px" src="images/Imagen1.png"></a>
 
-        -->
-        <li class="menu-iPhone">
-          <a href="consultar.php"><span>consulta</span>
-          </a>
-        </li>
-
-        <li class="menu-iPhone">
-          <a href="#"><span>Ingreso vehiculo</span>
-          </a>
-        </li>
-
-        <li class="menu-watch">
-          <a href="register.php"><span>registro</span>
-          </a>
-        </li>
-        <li class="menu-tv">
-          <a href="#">
-            <span>usuarios</span>
-          </a>
-        </li>
-        <li class="menu-support">
-          <a href="#">
-            <span>tarifas</span>
-          </a>
-        </li>
-
-        <li class="menu-support">
-          <a href="actualizar.html">
-            <span>Actualizar</span>
-          </a>
-        </li>
-
-        <!--
-          iconos
-
-        -->
-        <li class="menu-search">
-          <a href="#">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li class="menu-store">
-          <a href="#">
-            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li class="menu-apple">
-          <a href="https://es-la.facebook.com/">
-            <i class="fa fa-apple apple-icon" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
-      
-      <!-- menu Search -->
-      <div class="menu-search-container">
-        <div class="menu-search-input">
-        <form action="">
-          <a href="#">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </a>
-          <input class="menu-search-input" type="text" aria-label="Search apple.com" placeholder="Search apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false">
-        </form>
+        </a>
+      </li>
+      <li class="menu-mac">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Clientes</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="consultar.php" role="button">Consultar</a><br>
+          <a class="dropdown-item" href="registrar_cliente.php" role="button">Registrar</a><br>
+          <a class="dropdown-item" href="actualizar.php" role="button">Actualizar </a><br>
+          <a class="dropdown-item" href="eliminar.php" role="button">eliminar</a>
         </div>
-        <a class="menu-search-close" href="#">
-          <i class="fa fa-close" aria-hidden="true"></i>
-        </a> 
-        <div class="search-sub-menu">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Find a store</a></li>
-          <li><a href="#">Accessories</a></li>
-          <li><a href="#">iPod</a></li>
-          <li><a href="#">iOS</a></li>
-          <li><a href="#">Gift Cards</a></li>
-        </ul>
+      </li>
+      <li class="menu-iPad">
+        <a href="#">
+          <span>Ingreso vehiculo</span>
+        </a>
+      </li>
+      <li class="menu-iPhone">
+        <a href="#">
+          <span>Registro</span>
+        </a>
+      </li>
+      <li class="menu-watch">
+        <a href="#">
+          <span>Usuarios</span>
+        </a>
+      </li>
+      <li class="menu-tv">
+        <a href="#">
+          <span>Tarifas</span>
+        </a>
+      </li>
+      <li class="menu-support">
+        <a href="#">
+          <span>Actualizar</span>
+        </a>
+      </li>
+      <li class="menu-search">
+        <a href="#">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="menu-store">
+        <span class="navbar-text">
+          <?php
+          echo "<br><br>Usuario: ".$_SESSION["usuario"]." ";
+          ?>
+          <br>
+          <a class="" href="cerrar_sesion.php"><img src="https://img.icons8.com/metro/26/000000/exit.png"></a>
+        </span>
+      </li>
+    </ul>
+
+    <!-- Search -->
+    <div class="menu-search-container">
+      <div class="menu-search-input">
+      <form action="">
+        <a href="#">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
+        <input class="menu-search-input" type="text" aria-label="Search apple.com" placeholder="Search apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false">
+      </form>
       </div>
-      </div>
-     
+      <a class="menu-search-close" href="#">
+        <i class="fa fa-close" aria-hidden="true"></i>
+      </a>
+      <div class="search-sub-menu">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Find a store</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">iPod</a></li>
+        <li><a href="#">iOS</a></li>
+        <li><a href="#">Gift Cards</a></li>
+      </ul>
     </div>
-  </nav>
-  </header>
+    </div>
+
+  </div>
+</nav>
+</header>
 <div class="fade-screen"></div>
 <script src="js/apple.js"></script>
 

@@ -48,7 +48,7 @@
 
               <!--Grid column-->
               <input type="hidden" name="envio">
-              <h5 class="regtext">¿Olvidaste tu contraseña?<a class="" href="register.html">Ingresa aqui</a></h5>
+              <h5 class="regtext">¿Olvidaste tu contraseña?<a class="" href="recuperar-pass.php">Ingresa aqui</a></h5>
               <input type="submit" name="login" class="button" value="Ingresar" />
               <!--Grid column-->
 
