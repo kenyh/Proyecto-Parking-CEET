@@ -44,7 +44,9 @@
 			<input class=""type="text" name="Nombres"  placeholder="Nombre Completo"></input><br /><br />
 			<input class=""type="text" name="Correo"  placeholder="E-mail"></input><br /><br />
 			<input class=""type="text" name="Direccion"  placeholder="Direccion"></input><br /><br />
-			<input class=""type="text" name="Placa"  placeholder="Placa"></input><br /><br />
+			<input class=""type="text" name="Placa"  placeholder="Telefono"></input><br /><br />
+			<input class=""type="password" name="password" required placeholder="Contraseña"></input><br /><br /><br />
+			<h5>--------</h5>
 			<input class=""type="text" name="Vehiculo"  placeholder="Tipo de vehiculo"></input><br /><br />
 			<center>
 				<input type="submit" value="actualizar" class="button" name="btn-actualizar"></input>
