@@ -132,7 +132,7 @@
           animation-name: specialFadeInRight;
 }
 
-.menu-search-container.active {
+.search-container.active {
   display: block;
   -webkit-animation-name: specialFadeOut;
           animation-name: specialFadeOut;
@@ -372,7 +372,7 @@ nav {
   left: 0;
   height: 65px;
   min-width: 1024px;
-  background: rgba(60, 53, 53, 0.8);
+  background: rgba(8, 15, 15, 0.8);
   font-size: 18px;
   z-index: 2;
 }
@@ -446,11 +446,7 @@ nav {
   display: block;
 }
 
-.menu-search-close {
-  position: absolute;
-  right: -183px;
-  top: 0;
-}
+
 
 .search-sub-menu {
   background: #fff;
@@ -493,4 +489,8 @@ nav {
 .search-sub-menu ul li a:first-child {
   float: none;
   padding-right: 0;
+}
+/*ESTILOS CREADOS POR YO*/
+.nav-link {
+        padding: 0% !important;
 }

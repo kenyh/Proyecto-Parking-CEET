@@ -61,34 +61,33 @@
 			<input class=""type="text" name="Nombres"  placeholder="Nombre Completo"></input><br /><br />
 			<input class=""type="text" name="Correo"  placeholder="E-mail"></input><br /><br />
 			<input class=""type="text" name="Direccion"  placeholder="Direccion"></input><br /><br />
-			<input class=""type="text" name="Placa"  placeholder="Placa"></input><br /><br /><br />
+			<input class=""type="text" name="Telefono"  placeholder="Telefono"></input><br /><br />
+			<input class=""type="text" name="username" required placeholder="Nombre de Usuario"></input><br /><br />
+			<input class=""type="password" name="password" required placeholder="Contraseña"></input><br /><br />
 
 			<div class="form-group">
-	            <select class="form-control"  type="text" name="Vehiculo">
-	                <option>Carro</option>
-	                <option>Moto</option>
+				<h5>Tipo de Usuario</h5>
+	            <select class="form-control"  type="text" name="rol">
+	                <option>Administrador</option>
+	                <option>Empleado</option>
 	            </select>
 	        </div>
 
 			<center>
-				<input type="submit" value="Regitrarse" class="button" id='validate' name="btn-registrar"></input>
-					<a href="menu-ejemplo.php" class="btn btn-info">Volver a menu</a>
+				<input type="submit" value="Regitrarse" class="button" name="btn-registrar"></input>
+					<a href="apple.php" class="btn btn-info">Volver a menu</a>
 			</center>
-			<form>
-			<input id='email'>
-			<button type='submit' id='validate'>Validar correo</button>
-			</form>
-			<h2 id='result'></h2>
-			</form>
+
 		</div>
 	</div>
 
 <?php
-	include("conexion.php");
+	include("conexion_PK.php");
 	$Documento = "";
 	$Nombres = "";
 	$Correo = "";
 	$Direccion ="";
+
 
 	if (isset($_POST['btn-registrar']))
 	{
@@ -96,8 +95,10 @@
 		$Nombres =$_POST['Nombres'];
 		$Correo =$_POST['Correo'];
 		$Direccion =$_POST['Direccion'];
-		$Placa =$_POST['Placa'];
-		$Vehiculo =$_POST['Vehiculo'];
+		$Telefono =$_POST['Telefono'];
+		$username =$_POST['username'];
+		$pass =$_POST['password'];
+		$rol =$_POST['rol'];
 		$_SESSION['sesion_exito']=0;
 
 		/*$buscarUsuario = "SELECT * FROM $table_name WHERE clientes = '$Documento' ";
@@ -124,7 +125,7 @@
 		}
 	}*/
 
-					if($Documento=="" or $Nombres=="" or $Correo=="" or $Direccion=="" or $Placa=="" or $Vehiculo=="")//Error de campos vacios
+					if($Documento=="" or $Nombres=="" or $Correo=="" or $Direccion=="" or $Telefono=="" or $username=="" or $pass=="" or $rol=="")//Error de campos vacios
 						{
 							$_SESSION['sesion_exito']=1;
 							echo "
@@ -147,7 +148,7 @@
 							}
 							if ($_SESSION['sesion_exito']<>2 and $_SESSION['sesion_exito']<>1)
 								{
-									mysqli_query($conexion,"INSERT INTO clientes (Documento,Nombres,Correo,Direccion,Placa,Vehiculo) values ('$Documento','$Nombres','$Correo','$Direccion','$Placa','$Vehiculo')");
+									mysqli_query($conexion,"INSERT INTO pk (Documento,Nombres,Correo,Direccion,Telefono,usuario,pass,rol) values ('$Documento','$Nombres','$Correo','$Direccion','$Telefono','$username','$pass','$rol')");
 											echo"<p style =\"color:blue;\"align=\"center\"><strong>Los datos ingresados se guardaron correctamente:</strong></p>
 											&nbsp;<br>&nbsp;<br>&nbsp;<br>
 												<table class=\"table table-hover table-dark\" >
@@ -169,7 +170,7 @@
 												</tr>
 												<tr>
 													<td>
-														<lavel for=\"documento\"><b>Documento:</b></lavel>
+														<lavel for=\"correo\"><b>Correo:</b></lavel>
 													</td>
 													<td>
 														".$Correo."
@@ -177,7 +178,7 @@
 												</tr>
 												<tr>
 													<td>
-														<lavel for=\"telefono\"><b>Telefono:</b></lavel>
+														<lavel for=\"direccion\"><b>Direccion:</b></lavel>
 													</td>
 													<td>
 														".$Direccion."
@@ -188,15 +189,24 @@
 														<lavel for=\"telefono\"><b>Telefono:</b></lavel>
 													</td>
 													<td>
-														".$Placa."
+														".$Telefono."
 													</td>
 												</tr>
 													<tr>
 													<td>
-														<lavel for=\"telefono\"><b>Telefono:</b></lavel>
+														<lavel for=\"usuario\"><b>Usuario:</b></lavel>
 													</td>
 													<td>
-														".$Vehiculo."
+														".$username."
+													</td>
+												</tr>
+												</tr>
+													<tr>
+													<td>
+														<lavel for=\"rol\"><b>Rol:</b></lavel>
+													</td>
+													<td>
+														".$rol."
 													</td>
 												</tr>
 											</table>

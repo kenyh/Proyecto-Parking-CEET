@@ -3,7 +3,7 @@
 	$user_db ="root";
 	$pass_db ="";
 	$basename ="parking ceet";
-	$table_name ="clientes";
+	$table_ingresos = "ingresos";
 
 	$conexion = new mysqli($host_db, $user_db, $pass_db, $basename);
 

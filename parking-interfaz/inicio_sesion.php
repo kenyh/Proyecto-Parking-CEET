@@ -9,12 +9,12 @@
 <body>
 
 <?php
-	require "conexion_reg.php";
+	require "conexion_PK.php";
 	try
 	{
 		$link = new PDO('mysql:host=localhost;dbname=parking ceet', 'root', '');
 		$link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql="SELECT * FROM usuarios WHERE usuario=:user and pass =:pass";
+		$sql="SELECT * FROM pk WHERE usuario=:user and pass =:pass";
 		$resultado=$link->prepare($sql);
 		$user=htmlentities(addslashes($_POST["usuario"]));
 		$pass=htmlentities(addslashes($_POST["pass"]));
@@ -32,7 +32,7 @@
 			}
 			else
 			{
-				header("location:menu2ejem.php");
+				header("location:apple.php");
 			}
 	}
 	catch(Exception $e)

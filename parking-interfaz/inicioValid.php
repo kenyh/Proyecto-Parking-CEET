@@ -23,7 +23,7 @@
 			}
 			else
 			{
-				header("location:menu2ejem.php");
+				header("location:apple.php");
 			}
 		?>
 
