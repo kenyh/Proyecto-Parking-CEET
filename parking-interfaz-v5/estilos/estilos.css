@@ -1,0 +1,29 @@
+.uno {
+    text-align: center;
+    width: 500px;
+    height: auto; overflow: hidden;
+    border: 1px solid;
+    float: left;
+    padding: 5px;
+    background: #626e56;
+}
+.datos {
+    width: 12rem;
+    height: 02rem;
+    border-radius: 45%;
+    text-align: center;
+    background: #CEDCE7;
+    border: solid 2px #2A2F77;
+}
+.datos:hover {
+    background: #A7BECF;
+}
+.select {
+    height: 03rem;
+    text-align: center;
+    border-radius: 10%;
+}
+.logopar{
+    text-align: center;
+    float: center;
+}
