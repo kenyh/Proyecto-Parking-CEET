@@ -2,60 +2,73 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Parking-CEET</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Par-king</title>
+	<!-- <link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> --> -->
 
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-	  <!-- Brand -->
-	  <a class="" ><img style="width: 150px; height: 150px" src="images/Imagen1.png"></a>
 
-	  <!-- Links -->
-	  <ul class="navbar-nav">
+<?php include ("apple.php") ?>
 
-	    <!-- Dropdown -->
-	    <li class="nav-item dropdown">
-	      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-	        Clientes
-	      </a>
-	      <div class="dropdown-menu">
-				<a class="dropdown-item" href="consultar.php" role="button">Consultar</a><br>
-				<a class="dropdown-item" href="registrar.php" role="button">Registrar</a><br>
-				<a class="dropdown-item" href="actualizar.php" role="button">Actualizar </a><br>
-				<a class="dropdown-item" href="eliminar.php" role="button">Eliminar</a>
+<?php
 
-	      </div>
-	    </li>
+if (isset($_GET['$_SESSION["usuario"]'])){
+	$Usuario = $_GET['$_SESSION["usuario"]'];
+	$query = "SELECT * FROM pk where Usuario = $Usuario";
+	$result = mysqli_query($conn, $query);
+	if (mysqli_num_rows($result) ==1) {
+		$row = mysqli_fetch_array($result);
+		
+		$Nombres = $row['Nombres'];
+		$Documento =$row['Documento'];
+		$Usuario = $row['Usuario'];
+		$Contraseña = $row['pass'];
+		$Correo =$row['Correo'];
+		$Direccion = $row['Direccion'];
+		$Telefono = $row['Telefono'];
+	} 
+}
+?>
 
-	  </ul>
-</nav>
 
 
-<div class="container mregister">
-		<div id="login">
-			<h3>Actualizar</h3><br/>
+<div class="contenedor">
+	<div class="row">
 			<form name="registerform" id="registerform" action="actualizar.php" method="post">
-			<input class=""type="text" name="Documento"  placeholder="Documento de Identidad"></input><br /><br />
-			<input class=""type="text" name="Nombres"  placeholder="Nombre Completo"></input><br /><br />
-			<input class=""type="text" name="Correo"  placeholder="E-mail"></input><br /><br />
-			<input class=""type="text" name="Direccion"  placeholder="Direccion"></input><br /><br />
-			<input class=""type="text" name="Placa"  placeholder="Telefono"></input><br /><br />
-			<input class=""type="password" name="password" required placeholder="Contraseña"></input><br /><br /><br />
-			<h5>--------</h5>
-			<input class=""type="text" name="Vehiculo"  placeholder="Tipo de vehiculo"></input><br /><br />
-			<center>
-				<input type="submit" value="actualizar" class="button" name="btn-actualizar"></input>
-					<a href="menu-ejemplo.phpp" class="btn btn-info">Volver a menu</a>
-			</center>
-
+				<h3>ACTUALIZAR DATOS</h3><br/>
+				<div class="form-group">
+					<p>Nombre completo<input type="text" name="Nombres" value="<?php echo $row['Nombres'] ?>" class="form-control" disabled></p>
+				</div>
+				<div class="form-group">
+					<p>Documento de identidad<input type="text" name="Documento de identidad" value="<?php echo $row['Documento'] ?>" class="form-control" disabled></p>
+				</div>
+				<div class="form-group">
+					<p>Nombre de usuario<input type="text" name="NomUsuario" value=" <?php echo $row['Usuario'] ?> " class="form-control" disabled></p>
+				</div>
+				<div class="form-group">
+					<p>Contraseña<input type="text" name="contraseño" value=" <?php echo $row['pass'] ?> " class="form-control" disabled></p>
+				</div>
+				<div class="form-group">
+					<p>Correo<input type="text" name="E-mail" value=" <?php echo $row['Correo'] ?> " class="form-control"></p>
+				</div>
+				<div class="form-group">
+					<p>Telefono<input type="text" name="Telefono" value=" <?php echo $row['Telefono'] ?> " class="form-control" disabled></p>
+				</div>
+				<div class="form-group">
+					<p>Dirección<input type="text" name="Dirección" value=" <?php echo $row['Direccion'] ?> " class="form-control" disabled></p>
+				</div>
+				<div>
+					<input type="submit" value="actualizar" class="button btn-sub" name="btn-actualizar">
+					<input type="button" class="btn-home" value="Volver al menú"  onclick="location.href = 'apple.php'"></button>
+				</div>
 			</form>
 		</div>
 	</div>
+
 <?php
 	include("conexion.php");
 	if (isset($_POST['btn-actualizar']))
@@ -64,8 +77,7 @@
 		$Nombres =$_POST['Nombres'];
 		$Correo =$_POST['Correo'];
 		$Direccion =$_POST['Direccion'];
-		$Placa =$_POST['Placa'];
-		$Vehiculo =$_POST['Vehiculo'];
+		$Telefono =$_POST['Placa'];
 		//ACTUALIZAR
 		$_UPDATE_SQL="UPDATE $table_name set Documento='$Documento', Nombres='$Nombres', Correo='$Correo', Direccion='$Direccion', Placa='$Placa',Vehiculo='$Vehiculo' WHERE Documento='$Documento'";
 		mysqli_query($conexion,$_UPDATE_SQL);

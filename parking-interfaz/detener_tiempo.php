@@ -2,16 +2,14 @@
 
 include("db.php"); 
 
-if (isset($_POST['detener_tiempo'])){
+if (isset($_POST['generarfactura'])) {
+	$id = $_GET['id'];
+	$tiempo_total = $_POST['tiempo_total'];
 
-	$fecha_hora_salida = $_POST['fecha_hora_salida'];
+	$query = "UPDATE ingresos set tiempo_total ='$tiempo_total' WHERE id = $id";
+	mysqli_query($conn, $query);
 
-	$query = "INSERT INTO ingresos (fecha_hora_salida) VALUES (CURDATE())";
-	$result = mysqli_query($conn, $query);
-	if (!$result) {
-		die("query failed");
-	}
+	header("Location: pago_servicio.php");
 
-	header("Location: pago_servicio.php");	
 }
 ?>

@@ -13,9 +13,10 @@ if (isset($_POST['guardar_ingreso'])){
 		die("query failed");
 	}
 
-	$_SESSION['message'] = 'registro guardado';
+	$_SESSION['message'] = 'REGISTRO GUARDADO';
 	$_SESSION['message_type'] = 'success';  
 
 	header("Location: ingresos.php");	
 }
 ?>
+

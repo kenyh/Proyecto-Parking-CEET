@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Par-king</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container p-4">
+	<div class="row">
+		<div class="col-md-7 mx-auto">
+			<div class="card card-body">
+				<form action="actualizar.php" method="POST">
+					<div class="form-group">
+						<p>Nombre completo<input type="text" name="Nombres"  value="<?php echo $Nombre;?>" class="form-control" disabled></p>
+					</div>
+					<div class="form-group">
+						<p>Documento de identidad<input type="text" name="Documento de identidad" value="<?php echo $row['Documento'] ?>" class="form-control" disabled></p>
+					</div>
+					<div class="form-group">
+						<p>Nombre de usuario<input type="text" name="NomUsuario" value="<?php echo $NomUsu; ?>" class="form-control" disabled></p>
+					</div>
+					<div class="form-group">
+						<p>Contraseña<input type="text" name="contraseño" value="<?php echo $Contraseña; ?>" class="form-control" disabled></p>
+					</div>
+					<div class="form-group">
+						<p>Correo<input type="text" name="E-mail" value="<?php echo $Correo; ?>" class="form-control" disabled></p>
+					</div>
+					<div class="form-group">
+						<p>Telefono<input type="text" name="Telefono" value="<?php echo $Telefono; ?>" class="form-control" disabled></p>
+					</div>
+					<div class="form-group">
+						<p>Dirección<input type="text" name="Dirección" value="<?php echo $Direccion; ?>" class="form-control" disabled></p>
+					</div>
+					<center>
+						<input type="submit" value="actualizar" class="button" name="btn-actualizar"></input>
+					<a href="apple.php" class="btn btn-info">Volver a menu</a>
+					</center>
+
+				</form>
+			</div>
+			
+		</div>
+		
+	</div>
+			
+
+
+</body>
+
+

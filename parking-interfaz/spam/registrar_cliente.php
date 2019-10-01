@@ -64,13 +64,12 @@
 			<input class=""type="text" name="Nombres"  placeholder="Nombre Completo"></input><br /><br />
 			<input class=""type="text" name="Correo"  placeholder="E-mail"></input><br /><br />
 			<input class=""type="text" name="Direccion"  placeholder="Direccion"></input><br /><br />
-			<input class=""type="text" name="Placa"  placeholder="Telefono"></input><br /><br /><br />
-			<input class=""type="password" name="password" required placeholder="Contraseña"></input><br /><br /><br />
-			<h5>Tipo de usuario</h5>
+			<input class=""type="text" name="Placa"  placeholder="Placa"></input><br /><br /><br />
+
 			<div class="form-group">
 	            <select class="form-control"  type="text" name="Vehiculo">
-	                <option>Administrador</option>
-	                <option>Empleado</option>
+	                <option>Carro</option>
+	                <option>Moto</option>
 	            </select>
 	        </div>
 

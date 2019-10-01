@@ -15,33 +15,34 @@ if(isset($_GET['id'])) {
 
 if (isset($_POST['update'])) {
 	$id = $_GET['id'];
-	$tipo = $_POST['tipo'];
 	$costo_minuto = $_POST['costo_minuto'];
 
-	$query = "UPDATE tarifa set tipo='$tipo', costo_minuto='$costo_minuto' WHERE id = $id";
+	$query = "UPDATE tarifa set costo_minuto ='$costo_minuto' WHERE id = $id";
 	mysqli_query($conn, $query);
 
-	$_SESSION['message'] = 'tarifa actualizada';
+	$_SESSION['message'] = 'TARIFA ACTUALIZADA';
+	$_SESSION['message_type'] = 'success';  
 	header("Location: tarifas.php");
 
 }
 ?>
 
-<?php include ("includes_tarifas/header_tarifas.php")?>
+<?php include ("apple.php")?>
 
 <div class="container p-4">
 	<div class="row">
-		<div class="col-md-4 mx-auto">
+		<div class="col-md-6 mx-auto">
 			<div class="card card-body">
 				<form action="Editar_tarifas.php?id= <?php echo $_GET['id']; ?>" method="POST">
 					<div class="form-group">
-						<input type="text" name="tipo" value="<?php echo $tipo; ?>" class="form-control" placeholder="update title">
+						<h4><p align="center"> <b>ACTUALIZACION TARIFAS PAR-KING</b></p></h4>
+						<p><b>TIPO DE VEHICULO:<input type="text" name="tipo" value="<?php echo $tipo; ?>" class="form-control" placeholder="update title" disabled required></b></p>
 					</div>
 					<div class="form-group">
-						<input type="text" name="costo_minuto" rows="2" class="form-control" placeholder="actualizar costo" <?php echo $costo_minuto; ?> >
+						<p><b>COSTO NUEVO TARIFA:<input type="number" name="costo_minuto" rows="2" required class="form-control" placeholder="ACTUALIZAR COSTO" <?php echo $costo_minuto; ?> ></b></p>
 					</div>
-					<button class="btn btn-success" name="update">
-						actualizar
+					<button class="btn-sub" name="update" align="center">
+						ACTUALIZAR
 					</button>
 				</form>
 				

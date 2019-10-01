@@ -3,51 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Parking-CEET</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
 
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-	  <!-- Brand -->
-	  <a class="" ><img style="width: 150px; height: 150px" src="images/Imagen1.png"></a>
+<?php include ("apple.php")?>
 
-	  <!-- Links -->
-	  <ul class="navbar-nav">
-
-	    <!-- Dropdown -->
-	    <li class="nav-item dropdown">
-	      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-	        Clientes
-	      </a>
-	      <div class="dropdown-menu">
-				<a class="dropdown-item" href="consultar.php" role="button">Consultar</a><br>
-				<a class="dropdown-item" href="registrar.php" role="button">Registrar</a><br>
-				<a class="dropdown-item" href="actualizar.php" role="button">Actualizar </a><br>
-				<a class="dropdown-item" href="eliminar.php" role="button">Eliminar</a>
-
-	      </div>
-	    </li>
-
-	  </ul>
-</nav>
-
-<div class="container mregister">
+<div class="contenedor">
 		<div id="login">
-			<h3>Eliminar</h3><br/>
+			<h3>ELIMINAR USUARIO</h3><br/>
 			<p>Ingrese numero de documento que desea eliminar</p>
 			<form name="registerform" id="registerform" action="eliminar.php" method="post">
 			<input class=""type="text" name="Documento"  placeholder="Documento de Identidad"></input><br /><br />
-
-
-			<center>
-				<input type="submit" value="eliminar" class="button" name="btn-eliminar"></input>
-					<a href="menu-ejemplo.php" class="btn btn-info">Volver a menu</a>
-			</center>
+			<div>
+				<input type="submit" value="Eliminar" class="button btn-sub" name="btn-registrar">
+				<input type="button" class="btn-home" value="Volver al menú"  onclick="location.href = 'apple.php'"></button>
+			</div>
 
 			</form>
 		</div>

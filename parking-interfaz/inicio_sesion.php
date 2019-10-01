@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html  lang="es">
 <head>
-	<title>inicio_de_sesion.php</title>
+	<title>inicio de sesion.php</title>
 	<!--Tildes y eñes-->
 	<meta http-equiv="Content-Type"content="text/html;charset=utf-8"/>
 </head>
